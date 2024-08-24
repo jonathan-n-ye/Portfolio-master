@@ -50,7 +50,7 @@ function Projects() {
               title="ACES"
               description="Multinational organization dedicated to promoting financial literacy, business and STEM for high school students. Serving there as a national leader where I raise and mentor branches."
               ghLink="https://instagram.com/advancedcurriculumsofficial"
-              demoLink="https://editor.soumya-jit.tech/"              
+              demoLink="NA"              
             />
           </Col>
 
