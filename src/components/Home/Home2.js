@@ -1,6 +1,6 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
-import myImg from "../../Assets/avatar.svg";
+import myImg from "../../Assets/avatar.png";
 import Tilt from "react-parallax-tilt";
 import {
   AiFillGithub,
@@ -16,24 +16,23 @@ function Home2() {
         <Row>
           <Col md={8} className="home-about-description">
             <h1 style={{ fontSize: "2.6em" }}>
-              LET ME <span className="purple"> INTRODUCE </span> MYSELF
+              MY <span className="purple"> INTRODUCTION </span>
             </h1>
             <p className="home-about-body">
-              I fell in love with programming and I have at least learnt
-              something, I think… 🤷‍♂️
+              I love educating and promoting the education of different topics including financial literacy, business and sustainability.
               <br />
-              <br />I am fluent in classics like
+              <br />I work at and have worked at organizations like
               <i>
-                <b className="purple"> C++, Javascript and Go. </b>
+                <b className="purple"> CYIS, ACES, Canada FutureFocus and FBLA. </b>
               </i>
               <br />
               <br />
-              My field of Interest's are building new &nbsp;
+              My interests are centered around&nbsp;
               <i>
-                <b className="purple">Web Technologies and Products </b> and
+                <b className="purple">creating a sustainable future </b> and
                 also in areas related to{" "}
                 <b className="purple">
-                  Blockchain.
+                  business.
                 </b>
               </i>
               <br />
@@ -48,7 +47,7 @@ function Home2() {
               </i>
               &nbsp; like
               <i>
-                <b className="purple"> React.js and Next.js</b>
+                <b className="purple"> React.js</b>
               </i>
             </p>
           </Col>
@@ -67,7 +66,7 @@ function Home2() {
             <ul className="home-about-social-links">
               <li className="social-icons">
                 <a
-                  href="https://github.com/soumyajit4419"
+                  href="https://github.com/jonathan-n-ye"
                   target="_blank"
                   rel="noreferrer"
                   className="icon-colour  home-social-icons"
@@ -77,7 +76,7 @@ function Home2() {
               </li>
               <li className="social-icons">
                 <a
-                  href="https://twitter.com/Soumyajit4419"
+                  href="https://twitter.com/jonathan_n_ye"
                   target="_blank"
                   rel="noreferrer"
                   className="icon-colour  home-social-icons"
@@ -87,7 +86,7 @@ function Home2() {
               </li>
               <li className="social-icons">
                 <a
-                  href="https://www.linkedin.com/in/soumyajit4419/"
+                  href="https://www.linkedin.com/in/jonathan-ye-/"
                   target="_blank"
                   rel="noreferrer"
                   className="icon-colour  home-social-icons"
@@ -97,7 +96,7 @@ function Home2() {
               </li>
               <li className="social-icons">
                 <a
-                  href="https://www.instagram.com/soumyajit4419"
+                  href="https://www.instagram.com/jonathan.ye_"
                   target="_blank"
                   rel="noreferrer"
                   className="icon-colour home-social-icons"
