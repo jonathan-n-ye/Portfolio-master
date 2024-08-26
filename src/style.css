@@ -507,6 +507,8 @@ button:focus {
   padding: 20px !important;
   opacity: 0.8 !important;
   border-radius: 10px !important;
+  max-height: 200px !important; /* Added max-height to limit image height */
+  object-fit: contain; /* Ensures the image covers the area while maintaining aspect ratio */
 }
 
 .blog-img {
