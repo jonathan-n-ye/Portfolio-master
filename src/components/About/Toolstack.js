@@ -6,6 +6,8 @@ import {
   SiSlack,
   SiGoogle,
   SiWindows11,
+  SiCanva,
+  SiFigma
 } from "react-icons/si";
 
 function Toolstack() {
@@ -25,6 +27,12 @@ function Toolstack() {
       </Col>
       <Col xs={4} md={2} className="tech-icons">
         <SiWindows11 />
+      </Col>
+      <Col xs={4} md={2} className="tech-icons">
+        <SiCanva />
+      </Col>
+      <Col xs={4} md={2} className="tech-icons">
+        <SiFigma />
       </Col>
     </Row>
   );
