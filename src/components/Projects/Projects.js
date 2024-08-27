@@ -18,7 +18,7 @@ function Projects() {
           My Recent <strong className="purple">Work </strong>
         </h1>
         <p style={{ color: "white" }}>
-          Here are a few initiatives I've worked on recently.
+          Here are a few initiatives and organizations I've worked in recently.
         </p>
         <Row style={{ justifyContent: "center", paddingBottom: "10px" }}>
           <Col md={4} className="project-card">
@@ -50,7 +50,7 @@ function Projects() {
               title="ACES"
               description="Multinational organization dedicated to promoting financial literacy, business and STEM for high school students. Serving there as a national leader where I raise and mentor branches."
               ghLink="https://instagram.com/advancedcurriculumsofficial"
-              demoLink="NA"              
+              demoLink="https://www.acesofficial.com/"              
             />
           </Col>
 
@@ -72,7 +72,7 @@ function Projects() {
               title="William Lyon Mackenzie Business Council"
               description="Serving as the President of the largest chapter of Target Alpha and Canada FBLA. Over 100+ members."
               ghLink="https://instagram.com/wlmac.businesscouncil"
-              // demoLink="https://www.youtube.com/watch?v=dQw4w9WgXcQ&ab_channel=RickAstley" <--------Please include a demo link here
+              demoLink="https://linktr.ee/macbusinesscouncil"
             />
           </Col>
 
@@ -82,8 +82,8 @@ function Projects() {
               isBlog={false}
               title="Markham-Thornhill Consituency Youth Council"
               description="Collaborating with Minister Mary Ng and fellow council members to amplify youth voices in the community."
-              ghLink="https://github.com/soumyajit4419/Face_And_Emotion_Detection"
-              // demoLink="https://blogs.soumya-jit.tech/"      <--------Please include a demo link here 
+              ghLink="https://www.instagram.com/cycmarkhamthornhill/"
+              demoLink="https://maryng.libparl.ca/cyc-2020-2021/" 
             />
           </Col>
         </Row>
