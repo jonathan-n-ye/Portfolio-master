@@ -11,11 +11,11 @@ html {
     rgba(12, 10, 22, 0.863)
   );
 
-  --imp-text-color: #c770f0;
+  --lpurple: #c770f0;
 }
 
 .purple {
-  color: var(--imp-text-color) !important;
+  color: var(--lpurple) !important;
 }
 
 button:focus {
@@ -264,7 +264,7 @@ button:focus {
 }
 
 .home-content {
-  padding: 9rem 0 2rem !important;
+  padding: 5rem 0 1rem !important;
   color: whitesmoke;
   text-align: left;
 }
@@ -280,17 +280,17 @@ button:focus {
 }
 
 .main-name {
-  color: #cd5ff8;
+  color: var(--lpurple);
 }
 
 .Typewriter__wrapper {
   font-size: 2.5em !important;
-  color: #be6adf !important;
+  color: var(--lpurple) !important;
   font-weight: 600 !important;
 }
 .Typewriter__cursor {
   font-size: 2.4em !important;
-  color: #b562d6 !important;
+  color: var(--lpurple) !important;
 }
 
 @media (max-width: 767px) {
@@ -438,7 +438,7 @@ button:focus {
 }
 
 .blockquote-footer {
-  color: #a588c0 !important;
+  color: var(--lpurple) !important;
 }
 /* --------- */
 /* Projects */
@@ -554,10 +554,11 @@ button:focus {
 .tech-icons {
   font-size: 4.5em !important;
   margin: 15px !important;
-  padding: 10px !important;
+  padding-bottom: 15px !important;
   opacity: 0.93 !important;
-  border: 1.7px solid rgba(200, 137, 230, 0.637) !important;
+  border: 1.7px solid var(--lpurple) !important;
   vertical-align: middle !important;
+  
   text-align: center !important;
   border-radius: 5px !important;
   display: table !important;
@@ -573,9 +574,8 @@ button:focus {
 }
 
 .tech-icons:hover {
-  transform: scale(1.05) !important;
+  transform: scale(1.07) !important;
   overflow: hidden !important;
-  border: 2.2px solid rgba(197, 115, 230, 0.883) !important;
 }
 .tech-icon-images {
   padding: 20px !important;
@@ -684,61 +684,4 @@ button:focus {
   top: 0;
   background: #fff;
   border: 2px solid #8a49a8;
-}
-
-.like-item {
-  padding-top: 10px !important;
-  font-size: 1.1em !important;
-  font-family: sans-serif !important;
-}
-
-.like-btn {
-  background-color: #934cce5e !important;
-  border-color: #934cce5e !important;
-  padding: 0.25rem 0.98rem !important;
-  border-radius: 5px !important;
-  line-height: 1.4 !important;
-  transition: 0.3s ease !important;
-}
-
-.like-btn:hover {
-  transform: translateY(-2px) !important;
-  background-color: #a24dd386 !important;
-  border-color: #a24dd386 !important;
-}
-
-.animate-like {
-  animation-name: likeAnimation;
-  animation-fill-mode: forwards;
-  animation-duration: 0.85s;
-}
-@keyframes likeAnimation {
-  0% {
-    transform: scale(1.5);
-  }
-  100% {
-    transform: scale(1);
-  }
-}
-
-.fork-btn {
-  font-size: 1.1em !important;
-  padding-top: 10px !important;
-}
-
-.fork-btn-inner {
-  line-height: 1.4em !important;
-  background-color: #934cce5e !important;
-  padding: 0.25rem 1.1rem !important;
-  vertical-align: middle !important;
-  text-align: center !important;
-}
-
-.fork-btn-inner:hover {
-  transform: translateY(-2px) !important;
-  background-color: #a24dd386 !important;
-  border-color: #a24dd386 !important;
-}
-.fork-btn-inner::after {
-  display: none !important;
 }
