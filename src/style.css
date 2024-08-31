@@ -10,8 +10,13 @@ html {
     rgba(17, 16, 16, 0.678),
     rgba(12, 10, 22, 0.863)
   );
-
-  --lpurple: #c770f0;
+  --xlpurple: rgb(222, 130, 235);
+  --lpurple: hsl(281, 81%, 69%);
+  --purple: #623686;
+  --dpurple: #2d1950;
+  --xdpurple: #0c0513;
+  --white: white;
+  --glow: rgba(155, 88, 173, 0.65);
 }
 
 .purple {
@@ -32,7 +37,7 @@ button:focus {
   width: 100%;
   height: 100%;
   z-index: 999999;
-  background-color: #0c0513;
+  background-color: var(--xdpurple);
   background-image: url(./Assets/pre.svg);
   background-repeat: no-repeat;
   background-position: center;
@@ -57,18 +62,18 @@ button:focus {
 
 /* Track */
 ::-webkit-scrollbar-track {
-  background: #2d1950;
+  background: var(--dpurple);
 }
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: rgba(178, 121, 216, 0.959);
+  background: var(--lpurple);
   border-radius: 12px;
 }
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-  background: rgba(222, 130, 235, 0.911);
+  background: var(--xlpurple);
   border-radius: 12px;
 }
 
@@ -76,9 +81,8 @@ button:focus {
 /* Navbar Section  */
 /* --------- */
 .sticky {
-  background-color: #1b1a2ea9 !important;
+  background-color: var(--xdpurple) !important;
   transition: all 0.3s ease-out 0s !important;
-  box-shadow: 0px 10px 10px 0px rgba(9, 5, 29, 0.171) !important;
   backdrop-filter: blur(15px) !important;
 }
 
@@ -97,7 +101,7 @@ button:focus {
 
 .navbar-toggler span {
   display: block !important;
-  background-color: #be50f4 !important;
+  background-color: var(--lpurple) !important;
   height: 4px !important;
   width: 27px !important;
   margin-top: 5px !important;
@@ -144,14 +148,14 @@ button:focus {
   .navbar {
     padding: 1rem 2rem !important;
     font-size: 1.4rem !important;
-    background-color: #181a27 !important;
+    background-color: var(--xdpurple) !important;
   }
   .navbar-nav .nav-item a::after {
     display: none !important;
   }
 }
 .navbar-brand {
-  color: rgb(250, 250, 250) !important;
+  color: var(--white) !important;
 }
 
 .logo {
@@ -160,7 +164,7 @@ button:focus {
 }
 
 .navbar-nav .nav-link {
-  color: white !important;
+  color: var(--white) !important;
   padding-right: 1rem !important;
   padding-left: 1rem !important;
 }
@@ -194,7 +198,7 @@ button:focus {
   height: 5px;
   width: 0;
   border-radius: 16px;
-  background: #c95bf5;
+  background: var(--lpurple);
   bottom: 1px;
   left: 0;
   z-index: -1;
@@ -265,7 +269,7 @@ button:focus {
 
 .home-content {
   padding: 5rem 0 1rem !important;
-  color: whitesmoke;
+  color: var(--white);
   text-align: left;
 }
 
@@ -323,7 +327,7 @@ button:focus {
 }
 
 .home-about-description {
-  color: white !important;
+  color: var(--white) !important;
   padding-top: 100px !important;
   padding-bottom: 20px !important;
   text-align: center;
@@ -338,7 +342,7 @@ button:focus {
 .home-about-social {
   text-align: center !important;
   padding-top: 25px;
-  color: white !important;
+  color: var(--white) !important;
 }
 
 .home-about-social-links {
@@ -357,7 +361,7 @@ button:focus {
   text-align: center !important;
   font-size: 1.2em !important;
   line-height: 2em !important;
-  background: rgba(255, 255, 255, 0.972) !important;
+  background: var(--white) !important;
   border-radius: 50% !important;
   transition: 0.5s !important;
 }
@@ -370,7 +374,7 @@ button:focus {
   width: 100%;
   height: 100%;
   border-radius: 50%;
-  background: #68187a;
+  background: var(--purple);
   transition: 0.5s;
   transform: scale(0.9);
   z-index: -1;
@@ -378,13 +382,13 @@ button:focus {
 
 .home-social-icons:hover::before {
   transform: scale(1.1);
-  box-shadow: 0 0 15px #801f95;
+  box-shadow: 0 0 15px var(--purple);
 }
 
 .home-social-icons:hover {
-  color: #87209e;
-  box-shadow: 0 0 5px #87209e;
-  text-shadow: 0 0 2px #87209e;
+  color: var(--purple);
+  box-shadow: 0 0 10px var(--purple);
+  text-shadow: 0 0 2px var(--purple);
 }
 
 .social-icons {
@@ -394,14 +398,14 @@ button:focus {
 }
 
 .icon-colour {
-  color: #700c86 !important;
+  color: var(--purple) !important;
 }
 
 /* --------- */
 /* Footer */
 /* --------- */
 .footer {
-  background-color: rgb(10, 4, 22);
+  background-color: var(--xdpurple);
   bottom: 0 !important;
   padding-top: 10px !important;
   padding-bottom: 8px !important ;
@@ -427,7 +431,7 @@ button:focus {
 
 .footer h3 {
   font-size: 1em;
-  color: white !important;
+  color: var(--white) !important;
   margin-top: 0.5em !important;
   margin-bottom: 0.5em !important;
 }
@@ -459,8 +463,8 @@ button:focus {
 }
 
 .project-card-view {
-  box-shadow: 0 0 10px 5px rgba(119, 53, 136, 0.5) !important;
-  color: white !important;
+  box-shadow: 0 0 10px 5px var(--glow) !important;
+  color: var(--white) !important;
   background-color: transparent !important;
   opacity: 0.9 !important;
   transition: all 0.5s ease 0s !important;
@@ -469,7 +473,7 @@ button:focus {
 .project-card-view:hover {
   transform: scale(1.02) !important;
   overflow: hidden !important;
-  box-shadow: 0 0 15px 15px rgba(129, 72, 144, 0.561) !important;
+  box-shadow: 0 0 15px 15px var(--glow) !important;
 }
 
 .blog-card {
@@ -482,14 +486,14 @@ button:focus {
 
 .blog-card-view {
   background-color: transparent !important;
-  box-shadow: 0 3px 3px 2px rgba(145, 77, 161, 0.459) !important;
-  color: white !important;
+  box-shadow: 0 3px 3px 2px var(--glow) !important;
+  color: var(--white) !important;
   transition: all 0.5s ease 0s !important;
   height: 100% !important;
 }
 
 .blog-link {
-  color: white !important;
+  color: var(--white) !important;
   text-decoration: none !important;
 }
 
@@ -500,12 +504,11 @@ button:focus {
 .blog-card-view:hover {
   transform: scale(1.02) !important;
   overflow: hidden !important;
-  box-shadow: 0 3px 3px 5px rgba(155, 88, 173, 0.65) !important;
+  box-shadow: 0 3px 3px 5px var(--glow) !important;
 }
 
 .card-img-top {
   padding: 20px !important;
-  opacity: 0.8 !important;
   border-radius: 10px !important;
   max-height: 200px !important; /* Added max-height to limit image height */
   object-fit: contain; /* Ensures the image covers the area while maintaining aspect ratio */
@@ -518,22 +521,22 @@ button:focus {
 }
 
 .btn-primary {
-  color: #fff !important;
-  background-color: #623686 !important;
-  border-color: #623686 !important;
+  color: var(--white) !important;
+  background-color: var(--purple) !important;
+  border-color: var(--purple) !important;
 }
 
 .btn-primary:hover {
-  color: #fff !important;
-  background-color: #6d20c5d7 !important;
-  border-color: #6d20c5d7 !important;
+  color: var(--white) !important;
+  background-color: var(--dpurple) !important;
+  border-color: var(--xdpurple) !important;
 }
 .btn:focus {
   outline: none !important;
   box-shadow: none !important;
 }
 .project-heading {
-  color: white !important;
+  color: var(--white) !important;
   font-size: 2.3em !important;
   font-weight: 500 !important;
   padding-top: 10px !important;
@@ -548,7 +551,7 @@ button:focus {
   padding-top: 150px !important;
   padding-bottom: 30px !important;
   background-image: var(--section-background-color) !important;
-  color: white !important;
+  color: var(--white) !important;
 }
 
 .tech-icons {
@@ -562,7 +565,6 @@ button:focus {
   text-align: center !important;
   border-radius: 5px !important;
   display: table !important;
-  box-shadow: 4px 5px 4px 3px rgba(89, 4, 168, 0.137) !important;
   overflow: hidden !important;
   transition: all 0.4s ease 0s !important;
 }
@@ -584,7 +586,7 @@ button:focus {
 
 .quote-card-view {
   border: none !important;
-  color: white !important;
+  color: var(--white) !important;
   background-color: transparent !important;
 }
 
@@ -608,7 +610,7 @@ button:focus {
   padding-top: 110px !important;
   padding-bottom: 30px !important;
   background-image: var(--section-background-color) !important;
-  color: white !important;
+  color: var(--white) !important;
 }
 
 .resume {
@@ -646,14 +648,13 @@ button:focus {
 .resume .resume-item {
   padding: 0 0 10px 25px;
   margin-top: -2px;
-  border-left: 2px solid #8a49a8;
+  border-left: 2px solid var(--purple);
   position: relative;
 }
 
 .resume .resume-item .resume-title {
   line-height: 18px;
   font-size: 0.9em;
-  background: #5234795d;
   padding: 8px 15px;
   display: inline-block;
   font-weight: 600;
@@ -682,6 +683,6 @@ button:focus {
   border-radius: 50px;
   left: -9px;
   top: 0;
-  background: #fff;
-  border: 2px solid #8a49a8;
+  background: var(--white);
+  border: 2px solid var(--purple);
 }
